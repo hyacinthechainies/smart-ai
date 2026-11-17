@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<header class="topbar">
+    <h3>AI Assistant</h3>
+
+    <div class="topbar-right">
+        <select id="languageSelect" aria-label="Choose response language">
+            <option value="Kinyarwanda">🇷🇼 Kinyarwanda</option>
+            <option value="English" selected>🇬🇧 English</option>
+            <option value="French">🇫🇷 Français</option>
+        </select>
+
+        <span class="status">
+            <span class="status-dot"></span>
+            Online
+        </span>
+    </div>
+      <link rel="stylesheet" href="style.css">
+</header>
+<body>
+
+    <div class="app-container">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo">S</div>
+                <h2>SMART AI</h2>
+            </div>
+
+            <button class="new-chat" id="newChat">
+                + New Chat
+            </button>
+
+            <div class="sidebar-info">
+                <p>Your intelligent assistant</p>
+                <p>Ask. Learn. Discover.</p>
+            </div>
+
+            <div class="sidebar-bottom">
+                <span>SMART AI v1.0</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <h3>AI Assistant</h3>
+                <span class="status">
+                    <span class="status-dot"></span>
+                    Online
+                </span>
+            </header>
+
+            <section class="chat-area" id="chatArea">
+
+                <div class="welcome" id="welcome">
+                    <div class="welcome-logo">S</div>
+                    <h1>Welcome to SMART AI</h1>
+                    <p>Your intelligent assistant. What would you like to know today?</p>
+
+                    <div class="suggestions">
+                        <button class="suggestion" data-question="Explain Artificial Intelligence in simple English">
+                            Explain Artificial Intelligence
+                        </button>
+
+                        <button class="suggestion" data-question="Ni gute nakora website nkoresheje React?">
+                            Kwiga gukora website
+                        </button>
+
+                        <button class="suggestion" data-question="What are the latest technology trends?">
+                            Technology trends
+                        </button>
+                    </div>
+                </div>
+
+                <div id="messages"></div>
+
+            </section>
+
+            <div class="input-container">
+                <form id="chatForm">
+                    <textarea
+                        id="messageInput"
+                        placeholder="Ask SMART AI anything..."
+                        rows="1"
+                        required
+                    ></textarea>
+
+                    <button type="submit" id="sendButton">
+                        Send
+                    </button>
+                </form>
+
+                <p class="disclaimer">
+                    SMART AI can make mistakes. Verify important information.
+                </p>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
